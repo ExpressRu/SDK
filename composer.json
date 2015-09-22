@@ -4,7 +4,7 @@
     "version": "1.0.0-dev",
     "type": "library",
     "keywords": [],
-    "license": "GNU/GPLv3",
+    "license": "GPLv3",
     "authors": [
         {
             "name": "Artem Dudov",
