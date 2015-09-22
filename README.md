@@ -22,8 +22,8 @@ const USER_AUTHORIZATION_KEY = 'Ключ авторизации';
 ```php
 const ORDER_CLASS = 'ExpressRuSDK\\Model\\Entities\\Order\\Order';
 ```
-Объект этого класса будет возвращаться из методов SDK. Класс должен реализовывать интерфейс 
-```ExpressRuSDK\Model\Entities\Order\ExpressRuOrderInterface```
+
+Объект этого класса будет возвращаться из методов SDK. Класс должен реализовывать интерфейс ```ExpressRuSDK\Model\Entities\Order\ExpressRuOrderInterface```
 
 #### Свойства заказа по умолчанию
 При создании объекта заказа класса ```ExpressRuSDK\\Model\\Entities\\Order\\Order``` ему будут присвоены свойства прописанные в классе ```\ExpressRuSDK\OrderDefaults```. Если необходимо получать эти свойства из другого источника, то обратитесь к разделу **Провайдеры кофигураций**
