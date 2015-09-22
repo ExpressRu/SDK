@@ -1,7 +1,7 @@
 {
     "name": "express-ru/sdk",
     "description": "",
-    "version": "1.0.0-dev",
+    "version": "1.0.0",
     "type": "library",
     "keywords": [],
     "license": "GPLv3",
