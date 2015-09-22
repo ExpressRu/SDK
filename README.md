@@ -9,6 +9,13 @@
 ## Использование Express.Ru SDK
 > NB: Из-за особенностей реализации API названия стран должны записываться в верхнем регистре (например РОССИЯ). 
 
+### Установка
+Через composer
+```
+composer require express-ru/sdk
+```
+Либо скопируйте файлы SDK в ваш проект сохраняя структуру файлов, например ```\vendor\ExpressRuSDK``` и подключите файл  ```bootstrap.php``` который зарегистрирует автозагрузчик классов SDK. 
+
 ### Конфигурация
 #### Пользователь
 Файл ExpressRuSDK\UserConfig.php
@@ -22,8 +29,8 @@ const USER_AUTHORIZATION_KEY = 'Ключ авторизации';
 ```php
 const ORDER_CLASS = 'ExpressRuSDK\\Model\\Entities\\Order\\Order';
 ```
-
-Объект этого класса будет возвращаться из методов SDK. Класс должен реализовывать интерфейс ```ExpressRuSDK\Model\Entities\Order\ExpressRuOrderInterface```
+Объект этого класса будет возвращаться из методов SDK. Класс должен реализовывать интерфейс 
+```\ExpressRuSDK\Model\Entities\Order\ExpressRuOrderInterface```
 
 #### Свойства заказа по умолчанию
 При создании объекта заказа класса ```ExpressRuSDK\\Model\\Entities\\Order\\Order``` ему будут присвоены свойства прописанные в классе ```\ExpressRuSDK\OrderDefaults```. Если необходимо получать эти свойства из другого источника, то обратитесь к разделу **Провайдеры кофигураций**
