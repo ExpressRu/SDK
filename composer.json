@@ -1,0 +1,21 @@
+{
+    "name": "ExpressRu/SDK",
+    "description": "",
+    "version": "1.0.0-dev",
+    "type": "library",
+    "keywords": [],
+    "license": "GNU/GPLv3",
+    "authors": [
+        {
+            "name": "Artem Dudov",
+            "email": "artem.dudov@gmail.com"
+        }     
+    ],
+    "require": {
+        "php": ">=5.3",
+	"ext-curl": "*"
+    },
+    "autoload": {
+        "psr-4": { "ExpressRuSDK\\": "src/" }
+    }
+}
