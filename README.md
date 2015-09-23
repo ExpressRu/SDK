@@ -211,9 +211,9 @@ if($order) {
 Объекты исключений содержат метод ``` getApiResponse()``` возвращающий объект ```ExpressRuSDK\Api\ApiResponse```
 * Исключения наследующие ```ExpressRuSDK\Api\Exceptions\ApiTransmitException```. 
     * ```ExpressRuSDK\Api\Exceptions\NoResponseReceivedException``` - не получен ответ от API
-    * ```ExpressRuSDK\Api\Exceptions\InvalidJsonException``` - получен  не валидный JSON
+    * ```ExpressRuSDK\Api\Exceptions\InvalidJsonException``` - получен не валидный JSON
     * ```ExpressRuSDK\Api\Exceptions\InvalidStructureException``` - структура ответа не соответствует ожидаемой
-    * ```ExpressRuSDK\Api\Exceptions\ApiErrorException``` - в ответе API пресутствует ошибка
+    * ```ExpressRuSDK\Api\Exceptions\ApiErrorException``` - в ответе API присутствует ошибка
 * ```ExpressRuSDK\Model\Exceptions\ValidationException``` - выбрасывается в случае если создаваемая сущность не прошла валидацию на стороне API. Содержит метод ```getError()``` возвращающий массив ошибок.
 
 ## Провайдеры кофигураций
