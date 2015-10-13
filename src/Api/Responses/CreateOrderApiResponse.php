@@ -55,7 +55,7 @@ class CreateOrderApiResponse extends ApiResponse implements ValidatedResponse
     {
         parent::processResponse($responseJSON);
         if ($this->isSuccess()) {
-            $this->orderNumber = trim($this->result['invoiceNumber']);
+            $this->orderNumber = trim($this->result['orderNumber']);
         }
     }
 
