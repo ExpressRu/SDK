@@ -88,6 +88,7 @@ $order
     ->setSenderCountry('Россия')
     ->setRecipientCountry('Россия')
     ->setSenderCity('Москва')
+    ->setSenderZip('109000')
     ->setRecipientCity('Москва')
     ->setWeight(1)
     ->setCargoType(\ExpressRuSDK\Model\CargoTypes::CARGO_TYPE_CARGO)//Тип груза

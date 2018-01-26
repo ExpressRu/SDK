@@ -64,6 +64,10 @@ class Order extends AbstractEntity implements ExpressRuOrderInterface
      */
     protected $senderPhone;
     /**
+     * @var string
+     */
+    protected $senderZip;
+    /**
      * @var
      */
     protected $recipient;
@@ -87,6 +91,10 @@ class Order extends AbstractEntity implements ExpressRuOrderInterface
      * @var
      */
     protected $recipientPhone;
+    /**
+     * @var
+     */
+    protected $recipientZip;
     /**
      * @var
      */
@@ -418,6 +426,24 @@ class Order extends AbstractEntity implements ExpressRuOrderInterface
     /**
      * @return mixed
      */
+    public function getSenderZip()
+    {
+        return $this->senderZip;
+    }
+
+    /**
+     * @param mixed $senderZip
+     * @return $this
+     */
+    public function setSenderZip($senderZip)
+    {
+        $this->senderZip = $senderZip;
+        return $this;
+    }
+
+    /**
+     * @return mixed
+     */
     public function getRecipient()
     {
         return $this->recipient;
@@ -521,6 +547,24 @@ class Order extends AbstractEntity implements ExpressRuOrderInterface
     public function setRecipientPhone($recipientPhone)
     {
         $this->recipientPhone = $recipientPhone;
+        return $this;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getRecipientZip()
+    {
+        return $this->recipientZip;
+    }
+
+    /**
+     * @param mixed $recipientZip
+     * @return $this
+     */
+    public function setRecipientPhone($recipientZip)
+    {
+        $this->recipientZip = $recipientZip;
         return $this;
     }
 
