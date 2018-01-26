@@ -1,10 +1,9 @@
 {
     "name": "express-ru/sdk",
     "description": "",
-    "version": "1.0.0",
     "type": "library",
     "keywords": [],
-    "license": "GPLv3",
+    "license": "GPL-3.0-only",
     "authors": [
         {
             "name": "Artem Dudov",
