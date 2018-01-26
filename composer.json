@@ -3,7 +3,7 @@
     "description": "",
     "type": "library",
     "keywords": [],
-    "license": "GPL-3.0",
+    "license": "GPL-3.0-only",
     "authors": [
         {
             "name": "Artem Dudov",
