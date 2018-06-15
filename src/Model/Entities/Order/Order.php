@@ -562,7 +562,7 @@ class Order extends AbstractEntity implements ExpressRuOrderInterface
      * @param mixed $recipientZip
      * @return $this
      */
-    public function setRecipientPhone($recipientZip)
+    public function setRecipientZip($recipientZip)
     {
         $this->recipientZip = $recipientZip;
         return $this;
