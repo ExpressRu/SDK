@@ -20,7 +20,7 @@ class ApiConfig
     /**
      *
      */
-    const API_HOST = 'http://www.express.ru';
+    const API_HOST = 'https://www.express.ru';
     /**
      *
      */
