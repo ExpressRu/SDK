@@ -94,7 +94,7 @@ class ApiTransmitter
      */
     protected function sendApiRequest($method, $getP = array(), $postP = array())
     {
-        $usurl = $this->apiHost . DIRECTORY_SEPARATOR . $this->apiPath . DIRECTORY_SEPARATOR . $method;
+        $usurl = $this->apiHost . '/' . $this->apiPath . '/' . $method;
 
         $sig = $this->signatureGenerator->generate($this->client, $this->signatureSecretKey, $usurl, $getP, $postP);
 
