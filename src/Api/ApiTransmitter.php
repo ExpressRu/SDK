@@ -104,7 +104,7 @@ class ApiTransmitter
         $url = $usurl . '?' . $query;
 
         $headers = array(
-            $this->authHeading . ' : ' . $this->authString
+            $this->authHeading . ': ' . $this->authString
         );
 
         $ch = curl_init();
